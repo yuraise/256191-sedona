@@ -1,12 +1,113 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
-  </body>
-</html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Sedona</title>
+	</head>
+	<body>
+		<header class="page-header">
+			<div class="container">
+				<nav class="main-menu">
+					<li><a href="#">Информация</a></li>
+					<li><a href="#">Фото и видео</a></li>
+					<li><a href="#">Карта штата</a></li>
+					<li><a href="#">Гостиницы</a></li>
+				</nav>
+				<!--куда впихнуть логотип? -->
+			</div>
+		</header>
+		<main class="container">
+			<div class="welcoming">
+				<span class="welcome">Welcome</span>
+				<span class="to-the-gorgeous">to the gorgeous</span>
+				<h1>Sedona</h1>	
+				<span class="because-the-gc-sucks">Because the Grand Canyon sucks</span>
+			</div>
+			<div class="white-mask"></div>
+			<div class="five-reasons">
+				<p class="small-town">Седона- небольшой городок в Аризоне, заслуживающий большего!</p>
+				<p class="let-us-review">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+			</div>
+			<div class="first-reason">
+				<div class="reason reason-1">
+					<h2>Настоящий городок</h2>
+					<span>-№1-</span>
+					<p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+				</div>
+				<img src="http://placehold.it/800x256" alt="Sedona shalet" height="256" width="800">
+			</div>
+			<div class="features">
+				<div class="feature-1">
+					<img src="http://placehold.it/75x72" alt="Motel" height="72" width="75">
+					<h2>Жилье</h2>
+					<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+				</div>
+				<div class="feature-2">
+					<img src="http://placehold.it/74x70" alt="Burger" height="74" width="70">
+					<h2>Еда</h2>
+					<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+				</div>
+				<div class="feature-3">
+					<img src="http://placehold.it/64x76" alt="Souvenir" height="64" width="76">
+					<h2>Сувениры</h2>
+					<p>Не только китайского, но и местного производства!</p>
+				</div>
+			</div>
+			<div class="second-reason">
+				<img src="http://placehold.it/800x256" alt="Sedona shalet" height="256" width="800">
+				<div class="reason reason-2">
+					<h2>Там есть мост дьявола</h2>
+					<span>-№2-</span>
+					<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+				</div>
+			</div>
+			<div class="other-reasons">
+				<div class="reason reason-3">
+					<h2>Небольшая площадь</h2>
+					<span>-№3-</span>
+					<p>Все достопримечательности находятся очень близко</p>
+				</div><div class="reason reason-4">
+					<h2>Красивая дорога</h2>
+					<span>-№4-</span>
+					<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+				</div><div class="reason reason-5">
+					<h2>Мало туристов</h2>
+					<span>-№5-</span>
+					<p>Большинство едет в Гранд Каньон и толпится там</p>
+				</div>	
+			</div>
+			<div class="are-you-interested">
+				<b>Заинтересовались?</b>
+				<p>Укажите предполагаемые даты поездки,<br> и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+				<button class="search-btn" type="button">Поиск гостиницы в Седоне</button>
+			</div>
+			<div class="hotel-search">
+				<form action="https://echo.htmlacademy.ru" method="post">
+					<label for="check-in">Дата заезда:</label><input type="text" name="check-in" id="check-in" value="24 апреля 2016">
+					<label for="check-out">Дата выезда:</label><input type="text" name="check-out" id="check-out" value="4 июля 2016">
+					<label for="adults">Взрослые</label><input type="number" name="adults" id="adults" value="2">
+					<label for="kids">Дети</label><input type="number" name="kids" id="kids" value="0">
+					<button class="submit-btn">Найти</button>
+				</form>
+			</div>
+			<div class="sedona-on-map">
+				<img src="http://placehold.it/1200x473" alt="Седона на карте" width="1200" height="473">
+			</div>
+		</main>
+		<footer class="page-footer">
+			<div class="container">
+				<div class="footer-follow-us">
+					<a href="#">#VISITSEDONA</a>
+				</div>
+				<div class="footer-social">
+					<a href="#">Twitter</a>
+					<a href="#">Facebook</a>
+					<a href="#">YouTube</a>
+				</div>
+				<div class="footer-copyright">
+					WEBSITE BY <a href="https://htmlacademy.ru/"><img src="http://placehold.it/113x39" alt="HTML Academy" width="113" height="39"></a>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>				
