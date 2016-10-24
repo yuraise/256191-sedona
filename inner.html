@@ -18,17 +18,16 @@
 				<!-- куда впихнуть логотип? -->
 			</div>
 		</header>
-
 		<main class="container">
 			<div class="filter">
 				<form action="http://echo.htmlacademy.ru" method="post">
-					<div class="name-container">Инфраструктура</div>
+					<div class="name-container">Инфраструктура:</div>
 					<ul>
 						<li><input type="checkbox" name="pool" id="pool" checked><label for="pool">Бассейн</label></li>
 						<li><input type="checkbox" name="parking" id="parking"><label for="parking"></label>Парковка</li>
 						<li><input type="checkbox" name="wi-fi" id="wi-fi"><label for="wi-fi"></label>WI-FI</li>
 					</ul>
-					<div class="name-container">Тип жилья</div>
+					<div class="name-container">Тип жилья:</div>
 					<ul>
 						<li><input type="checkbox" name="hotel" id="hotel" checked><label for="hotel">Гостиница</label></li>
 						<li><input type="checkbox" name="motel" id="motel" checked><label for="motel"></label>Мотель</li>
@@ -36,7 +35,7 @@
 					</ul>
 					<div class="price-range">
 						<div class="name-container">Стоимость в сутки(р):</div>
-						<div class="min-and-max">от 0 до 3000</div>
+						<div class="min-and-max"><span>от 0</span> <span>до 3000</span></div>
 						<input type="range" name="range" id="range" min="0" max="3000" step="100">
 					</div>
 					<button class="show-btn">Показать</button>
@@ -94,10 +93,8 @@
 						<span class="rating">Рейтинг: 9,2</span>
 					</article>
 				</div>
-				
 			</div>
 		</main>
-
 		<footer class="page-footer">
 			<div class="container">
 				<div class="footer-follow-us">
