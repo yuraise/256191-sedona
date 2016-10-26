@@ -1,0 +1,22 @@
+body {
+	font-family: "PT Sans", sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 26px;
+	color: #000000;
+}
+
+.reasons-title {
+	font-size: 21px;
+	line-height: 26px;
+}
+
+.reason-title {
+	font-size: 21px;
+	line-height: 21px;
+}
+
+.search-title {
+	font-size: 30px;
+	line-height: 24px;
+}
