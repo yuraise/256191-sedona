@@ -30,7 +30,7 @@
 						</ul>
 					</div>
 					<div class="filter-container">
-						<div class="name-container">Тип жилья:</div>
+						<div class="filter-title">Тип жилья:</div>
 						<ul>
 							<li><input type="checkbox" name="hotel" id="hotel" checked><label for="hotel">Гостиница</label></li>
 							<li><input type="checkbox" name="motel" id="motel" checked><label for="motel">Мотель</label></li>
@@ -38,18 +38,18 @@
 						</ul>
 					</div>
 					<div class="price-range">
-						<div class="name-container">Стоимость в сутки(р):</div>
+						<div class="filter-title">Стоимость в сутки(р):</div>
 						<div class="min-and-max"><span>от 0</span> <span>до 3000</span></div>
 						<input type="range" name="range" id="range" min="0" max="3000" step="100">
+						<button type="submit" class="show-btn">Показать</button>
 					</div>
-					<button type="submit" class="show-btn">Показать</button>
 				</form>
 			</div>
 			<div class="results-title">
 				<div class="quantity-found">Найдено: 3</div>
-				<div class="sort">Сортировка:</div>
 				<ul>
-					<li class="active">по цене</li>
+					<li class="sort">Сортировка:</li>
+					<li><a class="active">по цене</a></li>
 					<li><a href="#">по типу</a></li>
 					<li><a href="#">по рейтингу</a></li>
 				</ul>
@@ -58,51 +58,73 @@
 					<a class="arrow arrow-up" href="#">По возрастанию</a>
 				</div>
 			</div>
-				<section class="result-item">
-					<div class="image-container">
-						<img src="http://placehold.it/135x90" alt="Amara resort" width="135" height="90">
-					</div>
-					<a href="#">Amara Resort and Spa</a>
+			<section class="result-item">
+				<div class="image-container">
+					<img src="http://placehold.it/135x90" alt="Amara resort" width="135" height="90">
+				</div>
+				<div class="section-block">
+					<a class="item-title" href="#">Amara Resort and Spa</a>
 					<div class="type-and-price">
 						<span class="housing-type">Гостиница</span>
 						<span class="housing-price">от 3500р.</span>
 					</div>
 					<div class="btns-container">
-						<a href="#" class="btn-details">Подробнее</a>
-						<a href="#" class="btn-book">Забронировать</a>
+						<a href="#" class="btn-details btn-blue">Подробнее</a>
+						<a href="#" class="btn-book btn-brown">Забронировать</a>
 					</div>
-					<div class="stars-container">4 звезды</div>
-					<span class="rating"> Рейтинг: 8,5</span>
-				</section>
-				<section class="result-item">
+				</div>
+					<div class="stars-container">
+						<div class="star"></div>
+						<div class="star"></div>
+						<div class="star"></div>
+						<div class="star"></div>
+					</div>
+					<p class="rating"> Рейтинг: 8,5</p>
+			</section>
+			<section class="result-item">
+				<div class="image-container">
 					<img src="http://placehold.it/135x90" alt="Amara resort" width="135" height="90">
-					<a href="#">Desert Quaill Inn</a>
+				</div>
+				<div class="section-block">
+					<a class="item-title" href="#">Desert Quaill Inn</a>
 					<div class="type-and-price">
 						<span class="housing-type">Мотель</span>
 						<span class="housing-price">от 2000 р.</span>
 					</div>
 					<div class="btns-container">
-						<a href="#" class="btn-details">Подробнее</a>
-						<a href="#" class="btn-book">Забронировать</a>
+						<a href="#" class="btn-details btn-blue">Подробнее</a>
+						<a href="#" class="btn-book btn-brown">Забронировать</a>
 					</div>
-					<div class="stars-container">2 звезды</div>
-					<span class="rating">Рейтинг: 8,9</span>
-				</section>
-				<section class="result-item">
+				</div>
+				<div class="stars-container">
+					<div class="star"></div>
+					<div class="star"></div>
+				</div>
+				<p class="rating">Рейтинг: 8,9</p>
+			</section>
+			<section class="result-item">
+				<div class="image-container">
 					<img src="http://placehold.it/135x90" alt="Amara resort" width="135" height="90">
-					<a href="#">Villas at Poco Diablo</a>
+				</div>
+				<div class="section-block">
+					<a class="item-title" href="#">Villas at Poco Diablo</a>
 					<div class="type-and-price">
 						<span class="housing-type">Апартаменты</span>
 						<span class="housing-price">от 4000 р.</span>
 					</div>
 					<div class="btns-container">
-						<a href="#" class="btn-details">Подробнее</a>
-						<a href="#" class="btn-book">Забронировать</a>
+						<a href="#" class="btn-details btn-blue">Подробнее</a>
+						<a href="#" class="btn-book btn-brown">Забронировать</a>
 					</div>
-					<div class="stars-container">3 звезды</div>
-					<span class="rating">Рейтинг: 9,2</span>
-				</section>
-			<footer class="page-footer">					
+				</div>
+				<div class="stars-container">
+					<div class="star"></div>
+					<div class="star"></div>
+					<div class="star"></div>
+				</div>
+				<p class="rating">Рейтинг: 9,2</p>
+			</section>
+			<footer class="page-footer">
 				<div class="footer-follow-us">
 					<a href="#">#VISITSEDONA</a>
 				</div>
