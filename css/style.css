@@ -5,6 +5,12 @@ body {
 	line-height: 26px;
 	color: #000000;
 }
+.wrapper {
+	position: relative;
+	width: 1200px;
+	margin: 0 auto;
+	outline: 1px solid green;
+}
 
 .reasons-title {
 	font-size: 21px;
@@ -19,4 +25,86 @@ body {
 .search-title { 
 	font-size: 30px;
 	line-height: 24px;
+}
+
+.main-menu {
+	outline: 1px solid red;
+	padding: 0 6%;
+}
+
+.main-menu > ul {
+	list-style: none;
+	padding: 0;
+}
+
+.main-menu li {
+	width: 239px;
+	min-height: 57px;
+	outline: 1px solid yellow;
+}
+
+.main-menu li:nth-child(1),
+.main-menu li:nth-child(2) {
+	float: left;
+}
+
+.main-menu li:nth-child(3),
+.main-menu li:nth-child(4) {
+	float: right;
+	text-align: right;
+}
+
+.main-menu a {
+	vertical-align: middle;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.logo {
+	position: absolute;
+	left: 531px;
+}
+
+.promo {
+	background: url("../img/bg-photo.jpg") no-repeat;
+	min-height: 500px;
+	padding-top: 77px;
+	outline: 1px solid yellow;
+}
+
+.promo-image {
+	width: 458px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.reasons-header {
+	outline: 1px solid yellow;
+}
+
+.reason-row {
+	min-height: 258px;
+	outline: 1px solid red;
+}
+
+.reason{
+	width: 400px;
+	outline: 1px solid yellow;
+}
+
+.reason-image {
+	width: 800px;
+	outline: 1px solid yellow;
+}
+
+.reason-blue:nth-child(1) {
+	float: left;
+}
+
+.reason-image:nth-child(1) {
+	float: right;
 }
