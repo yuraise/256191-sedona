@@ -29,33 +29,31 @@ body {
 
 .main-menu {
 	outline: 1px solid red;
-	padding: 0 6%;
+	padding: 15px 6%;
 }
 
 .main-menu > ul {
 	list-style: none;
 	padding: 0;
+	margin: 0;
 }
 
 .main-menu li {
-	width: 239px;
-	min-height: 57px;
+	width: 20%;
 	outline: 1px solid yellow;
+	vertical-align: middle;
 }
 
 .main-menu li:nth-child(1),
 .main-menu li:nth-child(2) {
 	float: left;
+	text-align: left;
 }
 
 .main-menu li:nth-child(3),
 .main-menu li:nth-child(4) {
 	float: right;
 	text-align: right;
-}
-
-.main-menu a {
-	vertical-align: middle;
 }
 
 .clearfix::after {
@@ -71,7 +69,9 @@ body {
 
 .promo {
 	background: url("../img/bg-photo.jpg") no-repeat;
-	min-height: 500px;
+	box-sizing: border-box;
+	height: 508px;
+	width: 100%;
 	padding-top: 77px;
 	outline: 1px solid yellow;
 }
@@ -84,14 +84,17 @@ body {
 
 .reasons-header {
 	outline: 1px solid yellow;
+	text-align: center;
+	padding: 60px 350px 70px 350px;
 }
 
-.reason-row {
-	min-height: 258px;
+.reason-row:nth-child(2n+1) {
+	height: 258px;
 	outline: 1px solid red;
 }
 
 .reason{
+	float: left;
 	width: 400px;
 	outline: 1px solid yellow;
 }
@@ -101,10 +104,120 @@ body {
 	outline: 1px solid yellow;
 }
 
-.reason-blue:nth-child(1) {
-	float: left;
+.sedona-map {
+	height: 593px;
 }
 
-.reason-image:nth-child(1) {
+.page-footer {
+	font-size: 0;
+	outline: 1px solid red;
+	padding: 35px 0;
+}
+
+.footer-block {
+	display: inline-block;
+	width: 400px;
+	box-sizing: border-box;
+	text-align: center;
+	font-size: 14px;
+	outline: 1px solid yellow;
+	vertical-align: middle;
+}
+
+.footer-follow-us {
+}
+
+.social-btns {
+}
+
+.footer-copyright {
+}
+
+.filters {
+	outline: 1px solid red;
+	padding: 0 6%;
+	height: 216px;
+	background: url("../img/inner-bg.jpg") no-repeat;
+}
+
+.filter-container {
+	float: left;
+	width: 240px;
+	outline: 1px solid yellow;
+}
+
+.price-range {
 	float: right;
+	width: 328px;
+	outline: 1px solid yellow;
+}
+
+.results-title {
+	padding: 30px 6%;
+	outline: 1px solid red;
+}
+
+.quantity-found {
+	float: left;
+	width: 135px;
+	outline: 1px solid yellow;
+}
+
+.results-title ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	float: left;
+	width: 366px;
+	outline: 1px solid yellow;
+}
+
+.arrows {
+	float: right;
+	width: 220px;
+	outline: 1px solid yellow;
+}
+
+.results-title li {
+	float: left;
+	width: 91px;
+}
+
+.hotel {
+	outline: 1px solid red;
+	padding: 30px 6%;
+}
+
+.hotel-image {
+	float: left;
+	width: 135px;
+	margin-right: 30px;
+	outline: 1px solid yellow;
+}
+
+.hotel-description {
+	float: left;
+	width: 365px;
+	text-align: left;
+	outline: 1px solid yellow;
+}
+
+.hotel-rating {
+	float: right;
+	width: 240px;
+	text-align: right;
+	outline: 1px solid yellow;
+}
+
+.stars-container {
+	outline: 1px solid yellow;
+}
+
+.star {
+	outline: 1px solid yellow;
+	float: right;
+}
+
+.star:after {
+	content: "*";
 }
