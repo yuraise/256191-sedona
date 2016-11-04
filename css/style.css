@@ -1,5 +1,5 @@
 body {
-	font-family: "PT Sans", sans-serif;
+	font-family: "PT Sans", "Arial" sans-serif;
 	font-size: 14px;
 	font-weight: bold;
 	line-height: 26px;
@@ -62,6 +62,11 @@ body {
 	clear: both;
 }
 
+.main-menu a {
+	text-decoration: none;
+	color: black;
+}
+
 .logo {
 	position: absolute;
 	left: 531px;
@@ -88,8 +93,8 @@ body {
 	padding: 60px 350px 70px 350px;
 }
 
-.reason-row:nth-child(2n+1) {
-	height: 258px;
+.reason-row:nth-of-type(2n+1) {
+	height: 256px;
 	outline: 1px solid red;
 }
 
@@ -102,6 +107,10 @@ body {
 .reason-image {
 	width: 800px;
 	outline: 1px solid yellow;
+}
+
+.reason-image img {
+	display: block;
 }
 
 .sedona-map {
@@ -221,3 +230,4 @@ body {
 .star:after {
 	content: "*";
 }
+
