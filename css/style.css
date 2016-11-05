@@ -1,11 +1,12 @@
 body {
-	font-family: "PT Sans", "Arial" sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 14px;
 	font-weight: normal;
 	line-height: 26px;
 	color: #000000;
 	text-transform: uppercase;
 }
+
 .wrapper {
 	position: relative;
 	width: 1200px;
@@ -13,22 +14,12 @@ body {
 	outline: 1px solid green;
 }
 
-.reasons-title {
-	font-size: 21px;
-	line-height: 26px;
-}
-
-.reason-title {
-	font-size: 21px;
-	line-height: 21px;
-	width: 175px;
-	margin: 55px auto 25px;
-}
-
 .search-title { 
 	font-size: 30px;
 	line-height: 24px;
 }
+
+							/*HEADER*/							
 
 .main-menu {
 	padding: 15px 6%;
@@ -95,7 +86,7 @@ body {
 	margin-left: -69px;
 	z-index: 10;
 }
-
+/*						PROMO 						*/
 .promo {
 	background: #ccc url("../img/bg-photo.jpg") no-repeat;
 	box-sizing: border-box;
@@ -120,13 +111,15 @@ body {
 	margin-right: auto;
 	margin-left: auto;
 }
-
+/*				REASONS-HEADER 					*/
 .reasons-header {
 	text-align: center;
 	padding: 60px 340px 55px 340px;
 }
 
 .reasons-title {
+	font-size: 21px;
+	line-height: 26px;
 	margin: 0;
 	margin-bottom: 22px;
 }
@@ -135,45 +128,98 @@ body {
 	line-height: 26px;
 	margin: 0;
 }
-
-.reason-title {
-	font-size: 21px;
-	line-height: 21px;
-	width: 175px;
-	margin: 55px auto 25px;
-}
-
-.reason-description {
-	line-height: 21px;
-	margin: 0;
-	margin-bottom: 52px;
-}
-
-.reason-number {
-	margin-bottom: 25px;
-}
-
-.reason-row:nth-of-type(2n+1) {
-	height: 256px;
-	outline: 1px solid red;
-}
+/*				REASON-ROWS 					*/
 
 .reason{
 	float: left;
 	width: 400px;
-	outline: 1px solid yellow;
 	text-align: center;
 }
 
 .reason-image {
 	width: 800px;
-	outline: 1px solid yellow;
 }
 
 .reason-image img {
 	display: block;
 }
 
+
+.reason-title {
+	font-size: 21px;
+	line-height: 21px;
+	width: 175px;
+	margin: 55px auto 22px;
+}
+
+.reason-number {
+	margin-bottom: 19px;
+}
+
+.reason-description {
+	line-height: 21px;
+	margin: 0;
+	margin-bottom: 50px;
+}
+
+.reason-blue {
+	background: #81b3d2;
+	color: white;
+	box-sizing: border-box;
+	padding: 0 45px;
+}
+
+/*					reason-icon 					*/
+
+.reason-icon {
+	padding: 55px 0px 85px ;
+}
+
+.reason-icon::before {
+	content: "";
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 25px;
+	background-image: url("../img/sprite.png");
+	outline: 1px solid yellow;
+}
+
+.icon-house::before {
+	width: 75px;
+	height: 72px;
+	background-position: -110px -5px;
+}
+
+.icon-food::before {
+	width: 74px;
+	height: 70px;
+	background-position: -5px -5px;
+}
+
+.icon-souvenir::before {
+	width: 64px;
+	height: 76px;
+	background-position: 127px -5px;
+}
+
+.reason-icon .reason-title {
+	margin-bottom: 25px;
+	margin-top: 0;
+	padding-top: 0px;
+	outline: 1px solid yellow;
+}
+
+.reason-icon .reason-description {
+	margin: 0;
+
+}
+
+.reason-row:nth-of-type(2n+1) {
+	height: 256px;
+}
+
+
+/*						SEDONA-MAP 					*/
 .sedona-map {
 	height: 593px;
 }
