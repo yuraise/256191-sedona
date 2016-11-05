@@ -131,6 +131,18 @@ body {
 	margin-bottom: 22px;
 }
 
+.reasons-description {
+	line-height: 26px;
+	margin: 0;
+}
+
+.reason-title {
+	font-size: 21px;
+	line-height: 21px;
+	width: 175px;
+	margin: 55px auto 25px;
+}
+
 .reason-description {
 	line-height: 21px;
 	margin: 0;
