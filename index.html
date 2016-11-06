@@ -86,30 +86,38 @@
 			<div class="hotel-search">
 				<h3 class="search-title">Заинтересовались?</h3>
 				<p class="search-text">Укажите предполагаемые даты поездки,<br>и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-				<button class="search-btn btn-brown" type="button">Поиск гостиницы в Седоне</button>
+				<button class="btn search-btn btn-brown" type="button">Поиск гостиницы в Седоне</button>
 			</div>
 			<div class="map">
 				<div class="search-form">
 					<form action="https://echo.htmlacademy.ru" method="post">
-						<div class="form-block">
+						<div class="form-block clearfix">
 							<label for="check-in">Дата заезда:</label>
 							<input type="text" name="check-in" id="check-in" placeholder="24 апреля 2016">
-							<button type="button" class="form-calendar"></button>
+							<button type="button" class="btn form-calendar"></button>
 						</div>
-						<div class="form-block">
+						<div class="form-block clearfix">
 							<label for="check-out">Дата выезда:</label>
 							<input type="text" name="check-out" id="check-out" placeholder="4 июля 2016">
-							<button type="button" class="form-calendar"></button>
+							<button type="button" class="btn form-calendar"></button>
 						</div>
 						<div class="form-block">
-							<label for="adults">Взрослые</label>
-							<button type="button">-</button><input type="text" name="adults" id="adults" value="2"><button type="button">+</button>
+							<label for="adults">Взрослые:</label>
+							<div class="quantity-picker">
+								<button type="button" class="form-btn btn-minus"></button>
+								<input type="text" name="adults" id="adults" value="2">
+								<button type="button" class="form-btn btn-plus"></button>
+							</div>
 						</div>
 						<div class="form-block">
-							<label for="kids">Дети</label>
-							<button type="button">-</button><input type="text" name="kids" id="kids" value="0"><button type="button">-</button>
+							<label for="kids">Дети:</label>
+							<div class="quantity-picker">
+								<button type="button" class="form-btn btn-minus"></button>
+								<input type="text" name="kids" id="kids" value="0">
+								<button type="button" class="form-btn btn-plus"></button>
+							</div>
 						</div>
-						<button type="submit" class="find-btn btn-blue">Найти</button>
+						<button type="submit" class="btn find-btn btn-blue">Найти</button>
 					</form>
 				</div>
 				<div class="sedona-map">

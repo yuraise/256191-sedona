@@ -5,6 +5,7 @@ body {
 	line-height: 26px;
 	color: #000000;
 	padding: 0;
+	margin: 0;
 	text-transform: uppercase;
 	background-color: #f2f2f2;
 }
@@ -14,7 +15,7 @@ body {
 	width: 1200px;
 	margin: 0 auto;
 	background-color: white;
-	box-shadow: 0 0 3px #dbdbdb;
+	box-shadow: 0 0 10px 5px #dbdbdb;
 }
 								/*HEADER*/							
 
@@ -179,7 +180,7 @@ body {
 	display: block;
 	margin: 0 auto;
 	margin-bottom: 25px;
-	background-image: url("../img/sprite.png");
+	background-image: url("../img/sprites.png");
 }
 
 .icon-house::before {
@@ -253,18 +254,33 @@ body {
 	margin-bottom: 43px;
 }
 
+.btn, .form-btn,
+.search-form input,
+.search-form label {
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-weight: bold;
+	line-height: 26px;
+	border: none;
+}
+
 .btn-brown {
 	background: #766357;
 	color: white;
-	font-family: "PT Sans", "Arial", sans-serif;
-	font-size: 21px;
-	line-height: 26px;
-	font-weight: bold;
+}
+
+.btn-brown:hover {
+	background: #604e43;
+}
+
+.btn-brown:active {
+	background: #503e33;
+	color: #857871;
 }
 
 .search-btn {
 	width: 570px;
 	height: 85px;
+	font-size: 21px;
 }
 
 /*						search-form 				*/
@@ -277,53 +293,61 @@ body {
 	margin-left: -285px;
 	padding: 58px;
 	background-color: white;
-	outline: 1px solid red;
-	font-weight: bold;
 	text-align: left;
-	font-family: "PT Sans", "Arial", sans-serif;
-	font-size: 14px;
-	line-height: 26px;
 }
 
 .form-block {
 	position: relative;
-	outline: 1px solid yellow;
 	margin-bottom: 30px;
 	vertical-align: middle;
 }
 
 .form-block:nth-child(2) {
-	margin-bottom: 38px;
+	margin-bottom: 31px;
 }
 
 .form-block:nth-child(3) {
 	float: left;
-	width: 200px;
+	width: 225px;
 }
 
 .form-block:nth-child(4) {
 	float: right;
-	width: 200px;
+	width: 177px;
 }
 
-#adults, #kids {
-	width: 40px;
-	text-align: center;
+.search-form label {
+	display: inline-block;
+}
+
+.search-form label,
+.search-form input {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	vertical-align: middle;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.search-form input {
+	background-color: #f2f2f2;
+}
+
+.search-form input:hover {
+	background-color: #ebebeb;
+}
+
+.search-form input .active {
+	background-color: white;
+	border: 1px solid #ebebeb;
 }
 
 #check-in, #check-out {
-	width: 300px;
-	margin-left: 20px;
-	padding: 5px;
+	float: right;
+	width: 346px;
+	box-sizing: border-box;
 	padding-left: 14px;
-	font-weight: bold;
-	font-family: "PT Sans", "Arial", sans-serif;
-	font-size: 14px;
-	line-height: 26px;
-	text-transform: uppercase;
 	color: black;
-	background-color: #f2f2f2;
-	border: none;
 }
 
 .form-calendar {
@@ -332,9 +356,64 @@ body {
 	top: 7px;
 	width: 21px;
 	height: 22px;
-	background: url("../img/calendar.png");
+	background: url("../img/sprites.png") -184px -211px;
 	z-index: 1;
-	box-shadow: none;
+	border: none;
+}
+
+.form-calendar:hover {
+	background-position: -114px -211px;
+}
+
+.form-calendar:active {
+	background-position: -37px -211px;
+}
+
+#kids, #adults {
+	box-sizing: border-box;
+	width: 112px;
+	height: 38px;
+	padding:0;
+	text-align: center;
+}
+
+.quantity-picker {
+	position: relative;
+	float: right;
+}
+
+.form-btn {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+}
+
+.btn-minus {
+	left: 8px;
+	top: 11px;
+	background: url("../img/sprites.png") -193px -291px;
+}
+
+.btn-minus:hover {
+	background-position: -243px -291px;
+}
+
+.btn-minus:active {
+	background-position: -292px -290px;
+}
+
+.btn-plus {
+	right: 9px;
+	top: 11px;
+	background: url("../img/sprites.png") -143px -291px;
+}
+
+.btn-plus:hover {
+	background-position: -94px -291px;
+}
+
+.btn-plus:active {
+	background-position: -42px -292px;
 }
 
 .btn-blue {
@@ -345,6 +424,16 @@ body {
 	line-height: 26px;
 	font-weight: bold;
 }
+
+.btn-blue:hover {
+	background-color: #669ec0;
+}
+
+.btn-blue:active {
+	color: #88b6d1;
+	background-color: #5496bd;
+}
+
 .find-btn {
 	width: 460px;
 	height: 58px;
@@ -371,7 +460,7 @@ body {
 .index-footer {
 	position: absolute;
 	bottom: 0;
-	opacity: 0.8;
+	opacity: 0.9;
 
 }
 
@@ -399,37 +488,66 @@ body {
 	width: 47px;
 	height: 47px;
 	margin: 0 3px;
-	background: #81b3d2 url("../img/sprite.png");
+	background: #81b3d2 url("../img/sprites.png");
+}
+
+.social-btn:hover {
+	background-color: #669ec0;
+}
+
+.social-btn:active {
+	background-color: #5496bd;
 }
 
 .social-btn-twitter {
 	background-position: -25px -95px;
 }
+
+.social-btn-twitter:active {
+	background-position: -28px -154px ;
+}
+
 .social-btn-fb {
 	background-position: -225px -95px;
 }
+
+.social-btn-fb:active{
+	background-position: -228px -146px;
+}
+
 .social-btn-youtube {
 	background-position: -125px -95px;
 }
 
+.social-btn-youtube:active {
+	background-position: -124px -155px;
+}
+
+
 .footer-copyright {
-	font-weight: bold;
+	font-weight: normal;
 	position: relative;
+	vertical-align: middle;
+	line-height: 39px;
 }
 
 .footer-copyright a {
+	display: inline-block;
+	margin-left: 3px;
 	color: white;
-}
-
-.footer-copyright a::after {
-	content: "";
-	position: absolute;
-	right: 100px;
-	top: -5px;
 	width: 113px;
 	height: 39px;
-	background: url(../img/sprite.png);
+	font-size: 0;
+	background: url(../img/sprites.png);
 	background-position: -304px -43px;
+}
+
+.footer-copyright a:hover {
+	background-position: -306px -104px;
+}
+
+.footer-copyright a:active {
+	background-position: -305px -152px;
 }
 
 .filters {

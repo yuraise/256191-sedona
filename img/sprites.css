@@ -1,52 +1,150 @@
-.burger, .house, .souvenir, .html-academy, .fb-icon, .youtube-icon, .tw-icon, .fb-icon{
+.sprite, .ha-blue, .ha-grey, .arrow-down, .arrow-down-down, .arrow-down-hvr, .arrow-up, .arrow-up-down, .arrow-up-hvr, .cal-down, .cal-hvr, .checkbox, .minus, .minus-down, .minus-hvr, .plus, .plus-down, .plus-hvr, .square, .stars, .fb-down, .yt-down, .tw-down, .calendar{
 	background: url(sprites.png) no-repeat;
 }
 
-.burger{
-	background-position: -19px -16px ;
-	width: 74px;
-	height: 70px;
+.sprite{
+	background-position: 0 0;
+	width: 640px;
+	height: 480px;
 }
 
-.house{
-	background-position: -112px -15px ;
-	width: 75px;
-	height: 72px;
-}
-
-.souvenir{
-	background-position: -213px -18px ;
-	width: 64px;
-	height: 76px;
-}
-
-.html-academy{
-	background-position: -304px -43px ;
+.ha-blue{
+	background-position: -306px -104px;
 	width: 113px;
 	height: 39px;
 }
 
-.fb-icon{
-	background-position: -243px -110px ;
+.ha-grey{
+	background-position: -305px -152px ;
+	width: 113px;
+	height: 39px;
+}
+
+.arrow-down{
+	background-position: -194px -339px ;
+	width: 11px;
+	height: 10px;
+}
+
+.arrow-down-down{
+	background-position: -294px -339px ;
+	width: 11px;
+	height: 10px;
+}
+
+.arrow-down-hvr{
+	background-position: -244px -339px ;
+	width: 11px;
+	height: 10px;
+}
+
+.arrow-up{
+	background-position: -144px -338px ;
+	width: 11px;
+	height: 10px;
+}
+
+.arrow-up-down{
+	background-position: -44px -338px ;
+	width: 11px;
+	height: 10px;
+}
+
+.arrow-up-hvr{
+	background-position: -94px -338px ;
+	width: 11px;
+	height: 10px;
+}
+
+.calendar{
+	background-position: -184px -211px ;
+	width: 21px;
+	height: 22px;
+}
+
+.cal-down{
+	background-position: -114px -211px ;
+	width: 21px;
+	height: 22px;
+}
+
+.cal-hvr{
+	background-position: -37px -211px ;
+	width: 21px;
+	height: 22px;
+}
+
+.checkbox{
+	background-position: -336px -278px ;
+	width: 26px;
+	height: 22px;
+}
+
+.minus{
+	background-position: -194px -297px ;
+	width: 12px;
+	height: 3px;
+}
+
+.minus-down{
+	background-position: -293px -296px ;
+	width: 12px;
+	height: 3px;
+}
+
+.minus-hvr{
+	background-position: -244px -297px ;
+	width: 12px;
+	height: 3px;
+}
+
+.plus{
+	background-position: -144px -293px ;
+	width: 11px;
+	height: 11px;
+}
+
+.plus-down{
+	background-position: -43px -294px ;
+	width: 11px;
+	height: 11px;
+}
+
+.plus-hvr{
+	background-position: -95px -293px ;
+	width: 11px;
+	height: 11px;
+}
+
+.square{
+	background-position: -338px -327px ;
+	width: 22px;
+	height: 22px;
+}
+
+.stars{
+	background-position: -306px -217px ;
+	width: 89px;
+	height: 17px;
+}
+
+.fb-down{
+	background-position: -246px -160px ;
 	width: 10px;
 	height: 19px;
 }
 
-.youtube-icon{
-	background-position: -140px -110px ;
+.yt-down{
+	background-position: -139px -170px;
 	width: 20px;
 	height: 16px;
 }
 
-.tw-icon{
-	background-position: -40px -110px ;
+.tw-down{
+	background-position: -44px -170px ;
 	width: 17px;
 	height: 15px;
 }
 
-.fb-icon{
-	background-position: -451px -55px ;
-	width: 10px;
-	height: 19px;
-}
+
 
