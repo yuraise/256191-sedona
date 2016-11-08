@@ -629,7 +629,7 @@ input[type="checkbox"]:disabled+label::before {
 	background: url("../img/checkbox-disabled.png") no-repeat 50% 50% ;
 }
 
-input[checked]:disabled+label::before {
+input[type="checkbox"]:checked:disabled+label::before {
 	background: url("../img/checked-disabled.png") no-repeat 50% 50% ;
 }
 
@@ -648,7 +648,7 @@ input[checked]:disabled+label::before {
 
 .price-controls {
 	font-size: 0;
-	height: 36px;
+	height: 34px;
 	position: relative;
 	border: 2px solid white;
 	border-radius: 2px;
@@ -661,7 +661,7 @@ input[checked]:disabled+label::before {
 	display: inline-block;
 	vertical-align: top;
 	font-size: 14px;
-	line-height: 38px;
+	line-height: 36px;
 	cursor: pointer;
 }
 
@@ -736,7 +736,7 @@ input[checked]:disabled+label::before {
 .show-btn {
 	display: block;
 	margin: 0 auto;
-	padding: 6px 35px;
+	padding: 6px 33px;
 	font-size: 14px;
 	line-height: 20px;
 	color: inherit;
@@ -758,13 +758,15 @@ input[checked]:disabled+label::before {
 
 .results-title {
 	padding: 30px 6%;
-	outline: 1px solid red;
 }
 
 .quantity-found {
 	float: left;
 	width: 135px;
-	outline: 1px solid yellow;
+	margin-right: 27px;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
 }
 
 .results-title ul {
@@ -773,19 +775,107 @@ input[checked]:disabled+label::before {
 	margin: 0;
 	float: left;
 	width: 366px;
-	outline: 1px solid yellow;
-}
-
-.arrows {
-	float: right;
-	width: 220px;
-	outline: 1px solid yellow;
+	font-size: 0;
 }
 
 .results-title li {
-	float: left;
+	display: inline-block;
 	width: 91px;
+	font-size: 12px;
+	line-height: 26px;
+	vertical-align: bottom;
+	text-align: center;
 }
+
+.results-title .sort {
+	text-align: left;
+}
+
+.results-title .active {
+	color: #81b3d2;
+}
+
+.results-title li a {
+	text-decoration-style: dotted;
+	text-decoration-color: #81b3d2;
+	color: #b1b1b1;
+}
+
+.results-title li a:hover {
+	text-decoration-style: dotted;
+	text-decoration-color: #81b3d2;
+	color: #81b3d2;
+}
+
+.results-title li a:active {
+	text-decoration: none;
+	color: black;
+}
+
+
+
+
+
+
+.arrows {
+	position: relative;
+	float: right;
+	width: 50px;
+	height: 10px;
+	font-size: 0;
+	outline: 1px solid yellow;
+}
+
+.arrow {
+	display: inline-block;
+}
+
+.arrow::before {
+	outline: 1px solid red;
+	content: "";
+	display: inline-block;
+	border: 20px solid #b1b1b1;
+	border-left-width: 10px;
+	border-right-width: 10px;
+	border-right-color: transparent;
+	border-left-color: transparent;
+}
+
+.arrow-up::before {
+	margin-right: 10px;
+	border-top-width: 0;
+}
+
+.arrow-down::before {
+	border-bottom-width: 0;
+}
+
+.arrow-up.active::before {
+	border-bottom-color: #81b3d2;
+}
+
+.arrow-down.active::before {
+	border-top-color: #81b3d2;
+}
+
+.arrow-up::before:hover {
+	border-bottom-color: black;
+}
+
+.arrow-up::before:active {
+	border-bottom-color: #81b3d2;
+}
+
+.arrow-down::before:hover {
+	border-top-color: black;
+}
+
+.arrow-down::before:active {
+	border-top-color: #81b3d2;
+}
+
+
+
 
 .hotel {
 	outline: 1px solid red;
