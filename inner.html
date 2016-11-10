@@ -32,11 +32,11 @@
 								<label for="pool">Бассейн</label>
 							</li>
 							<li>
-								<input type="checkbox" name="parking" id="parking" disabled>
+								<input type="checkbox" name="parking" id="parking">
 								<label for="parking">Парковка</label>
 							</li>
 							<li>
-								<input type="checkbox" name="wi-fi" id="wi-fi" checked disabled >
+								<input type="checkbox" name="wi-fi" id="wi-fi">
 								<label for="wi-fi">WI-FI</label>
 							</li>
 						</ul>
@@ -61,8 +61,12 @@
 					<div class="price-range">
 						<div class="filter-title">Стоимость в сутки (р):</div>
 						<div class="price-controls">
-							<label class="price-min">от <input type="text" name="price-min" value="0"></label>
-							<label class="price-max">до <input type="text" name="price-max" value="3000"></label>
+							<div class="control-container">
+								<label for="price-min">от </label><input type="text" name="price-min" value="0">
+							</div>
+							<div class="control-container">
+								<label for="price-max">до </label><input type="text" name="price-max" value="3000">
+							</div>
 						</div>
 						<div class="range-controls">
 							<div class="scale">
