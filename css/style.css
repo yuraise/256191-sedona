@@ -668,11 +668,16 @@ input[type="checkbox"]:checked:disabled+label::before {
 	display: inline-block;
 	vertical-align: middle;
 	text-align: center;
-	width: 158px;
+	width: 142px;
+	padding-left: 16px;
 	font-size: 14px;
 	line-height: 28px;
 	cursor: pointer;
-	outline: 1px solid yellow;
+}
+
+.control-container:first-of-type {
+	padding-left: 38px;
+	width: 120px;
 }
 
 .price-controls input {
@@ -683,7 +688,6 @@ input[type="checkbox"]:checked:disabled+label::before {
 	background: none;
 	outline: none;
 	border: none;
-	outline: 1px solid yellow;
 }
 
 .price-controls::after {
@@ -915,7 +919,6 @@ input[type="checkbox"]:checked:disabled+label::before {
 	float: left;
 	width: 365px;
 	text-align: left;
-	outline: 1px solid yellow;
 }
 
 .hotel .item-title {
@@ -926,6 +929,7 @@ input[type="checkbox"]:checked:disabled+label::before {
 	color: black;
 	margin-bottom: 7px;
 	display: block;
+	transform: translateY(-3px);
 }
 
 .hotel .item-title:hover {
