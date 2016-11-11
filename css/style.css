@@ -92,7 +92,8 @@ body {
 }
 /*						PROMO 						*/
 .promo {
-	background: #ccc url("../img/bg-photo.jpg") no-repeat;
+	background: #ccc url("../img/background-photo.jpg") no-repeat;
+	/*background-position: 0 -58px;*/
 	background-size: cover;
 	box-sizing: border-box;
 	height: 508px;
@@ -121,9 +122,10 @@ body {
 /*				REASONS-HEADER 					*/
 .reasons-header {
 	text-align: center;
-	width: 43%;
+	width: 44%;
 	margin: 0 auto;
 	padding: 60px 40px 50px 40px;
+	outline: 1px solid red;
 }
 
 .reasons-title {
@@ -461,6 +463,8 @@ body {
 /*						SEDONA-MAP 					*/
 .sedona-map {
 	height: 593px;
+	overflow: hidden;
+
 }
 
 .sedona-map img {
