@@ -93,7 +93,7 @@ body {
 /*						PROMO 						*/
 .promo {
 	background: #ccc url("../img/bg-photo.jpg") no-repeat;
-	background-size: 100% 100%;
+	background-size: cover;
 	box-sizing: border-box;
 	height: 508px;
 	width: 100%;
@@ -141,12 +141,12 @@ body {
 
 .reason{
 	float: left;
-	width: 33,333333%;
+	width: 33.333333%;
 	text-align: center;
 }
 
 .reason-image {
-	width: 66,666666%;
+	width: 66.666666%;
 	overflow: hidden;
 }
 
@@ -168,7 +168,6 @@ body {
 
 .reason-description {
 	line-height: 21px;
-	width: 310px;
 	margin: 0 auto;
 	margin-bottom: 50px;
 }
@@ -243,7 +242,7 @@ body {
 }
 
 .row-grey .reason-description {
-	width: 270px;
+	width: 67.5%;
 	margin: 0 auto;
 	margin-bottom: 0px;
 }
@@ -489,7 +488,7 @@ body {
 
 .footer-block {
 	display: inline-block;
-	width: 33,333333%;
+	width: 33.333333%;
 	box-sizing: border-box;
 	text-align: center;
 	font-size: 14px;
@@ -596,7 +595,7 @@ body {
 
 .filter-container {
 	float: left;
-	width: 253px;
+	width: 21.08%;
 }
 
 .filter-title {
@@ -928,7 +927,7 @@ input[type="checkbox"]:checked:disabled+label::before {
 
 .hotel-description {
 	float: left;
-	width: 365px;
+	width: 270px;
 	text-align: left;
 }
 
@@ -994,7 +993,7 @@ input[type="checkbox"]:checked:disabled+label::before {
 
 .hotel-rating {
 	float: right;
-	width: 240px;
+	width: 140px;
 	text-align: right;
 }
 
