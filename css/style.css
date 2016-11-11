@@ -12,7 +12,8 @@ body {
 
 .wrapper {
 	position: relative;
-	width: 1200px;
+	max-width: 1200px;
+	min-width: 768px;
 	margin: 0 auto;
 	background-color: white;
 	box-shadow: 0 0 10px 5px #dbdbdb;
@@ -34,7 +35,7 @@ body {
 }
 
 .main-menu li {
-	width: 242px;
+	width: 23%;
 	vertical-align: middle;
 }
 
@@ -92,6 +93,7 @@ body {
 /*						PROMO 						*/
 .promo {
 	background: #ccc url("../img/bg-photo.jpg") no-repeat;
+	background-size: 100% 100%;
 	box-sizing: border-box;
 	height: 508px;
 	width: 100%;
@@ -105,6 +107,7 @@ body {
 	height: 57px;
 	width: 100%;
 	background: url(../img/white-mask.png);
+	background-size: 100% 57px;
 	position: absolute;
 	bottom: 0;
 }
@@ -118,7 +121,9 @@ body {
 /*				REASONS-HEADER 					*/
 .reasons-header {
 	text-align: center;
-	padding: 60px 340px 50px 340px;
+	width: 43%;
+	margin: 0 auto;
+	padding: 60px 40px 50px 40px;
 }
 
 .reasons-title {
@@ -136,12 +141,13 @@ body {
 
 .reason{
 	float: left;
-	width: 400px;
+	width: 33,333333%;
 	text-align: center;
 }
 
 .reason-image {
-	width: 800px;
+	width: 66,666666%;
+	overflow: hidden;
 }
 
 .reason-image img {
@@ -348,7 +354,6 @@ body {
 }
 
 .search-form input:focus {
-	display: block;
 	background-color: white;
 	box-shadow: inset 0 0 0 2px #ebebeb;
 }
@@ -379,51 +384,56 @@ body {
 	background-position: -37px -211px;
 }
 
-#kids, #adults {
-	box-sizing: border-box;
-	width: 112px;
-	height: 38px;
-	padding-left: 36px;
-	padding-right: 36px;
-	text-align: center;
+.quantity-picker {
+	float: right;
+	font-size: 0;
 }
 
-.quantity-picker {
-	position: relative;
-	float: right;
+.quantity-picker input {
+	width: 40px;
+	height: 36px;
+	text-align: center;
+	padding: 0;
 }
 
 .form-btn {
+	position: relative;
+	width: 36px;
+	height: 36px;
+}
+
+.form-btn::before {
 	position: absolute;
+	content: "";
 	width: 15px;
 	height: 15px;
 }
 
-.btn-minus {
-	left: 8px;
+.btn-minus::before {
+	left: 11px;
 	top: 11px;
 	background: url("../img/sprites.png") -193px -291px;
 }
 
-.btn-minus:hover {
+.btn-minus:hover:before {
 	background-position: -243px -291px;
 }
 
-.btn-minus:active {
+.btn-minus:active:before {
 	background-position: -292px -290px;
 }
 
-.btn-plus {
+.btn-plus::before {
 	right: 9px;
 	top: 11px;
 	background: url("../img/sprites.png") -143px -291px;
 }
 
-.btn-plus:hover {
+.btn-plus:hover:before {
 	background-position: -94px -291px;
 }
 
-.btn-plus:active {
+.btn-plus:active:before {
 	background-position: -42px -292px;
 }
 
@@ -459,6 +469,7 @@ body {
 }
 
 .page-footer {
+	width: 100%;
 	font-size: 0;
 	padding: 35px 0;
 	background-color: white;
@@ -478,7 +489,7 @@ body {
 
 .footer-block {
 	display: inline-block;
-	width: 400px;
+	width: 33,333333%;
 	box-sizing: border-box;
 	text-align: center;
 	font-size: 14px;
