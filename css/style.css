@@ -107,8 +107,8 @@ body {
 	display: block;
 	height: 57px;
 	width: 100%;
-	background: url(../img/white-mask.png);
-	background-size: 100% 57px;
+	background: url(../img/white-mask.png) 0 100% no-repeat;
+	background-size: contain;
 	position: absolute;
 	bottom: 0;
 }
@@ -122,10 +122,9 @@ body {
 /*				REASONS-HEADER 					*/
 .reasons-header {
 	text-align: center;
-	width: 44%;
+	width: 500px;
 	margin: 0 auto;
 	padding: 60px 40px 50px 40px;
-	outline: 1px solid red;
 }
 
 .reasons-title {
@@ -145,6 +144,7 @@ body {
 	float: left;
 	width: 33.333333%;
 	text-align: center;
+	min-height: 256px;
 }
 
 .reason-image {
@@ -161,7 +161,7 @@ body {
 	font-size: 21px;
 	line-height: 21px;
 	width: 155px;
-	margin: 55px auto 22px;
+	margin: 55px auto 20px;
 }
 
 .reason-number {
@@ -178,7 +178,7 @@ body {
 	background: #81b3d2;
 	color: white;
 	box-sizing: border-box;
-	padding: 0 45px;
+	padding: 0 4.75%;
 }
 
 /*					reason-icon 					*/
