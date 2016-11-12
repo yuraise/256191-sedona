@@ -604,7 +604,11 @@ body {
 
 .filter-container {
 	float: left;
-	width: 24%;
+	width: 150px;
+}
+
+.filter-container:nth-of-type(1) {
+	margin-right: 10%;
 }
 
 .filter-title {
@@ -668,7 +672,7 @@ input[type="checkbox"]:checked:disabled+label::before {
 
 .price-range {
 	float: right;
-	width: 330px;
+	width: 31.25%;
 	text-transform: uppercase;
 }
 
@@ -687,20 +691,21 @@ input[type="checkbox"]:checked:disabled+label::before {
 	display: inline-block;
 	vertical-align: middle;
 	text-align: center;
-	width: 142px;
-	padding-left: 16px;
+	width: 40.375%;
+	padding-left: 9%;
 	font-size: 14px;
-	line-height: 28px;
+	line-height: 30px;
 	cursor: pointer;
+	outline: 1px solid yellow;
 }
 
 .control-container:first-of-type {
-	padding-left: 38px;
-	width: 120px;
+	padding-left: 11,875%;
+	width: 41.0%;
 }
 
 .price-controls input {
-	max-width: 40px;
+	max-width: 35%;
 	margin: 0;
 	color: inherit;
 	font: inherit;
@@ -727,7 +732,7 @@ input[type="checkbox"]:checked:disabled+label::before {
 }
 
 .range-controls .scale {
-	width: 320px;
+	width: 100%;
 	height: 2px;
 	background: rgba(255,255,255,0.3);
 }
@@ -765,7 +770,7 @@ input[type="checkbox"]:checked:disabled+label::before {
 .show-btn {
 	display: block;
 	margin: 0 auto;
-	padding: 6px 33px;
+	padding: 6px 10%;
 	font-size: 14px;
 	line-height: 20px;
 	color: inherit;
