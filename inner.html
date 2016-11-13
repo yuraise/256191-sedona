@@ -5,7 +5,7 @@
 		<title>Sedona-hotels</title>
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/style.min.css">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -62,10 +62,10 @@
 						<div class="filter-title">Стоимость в сутки (р):</div>
 						<div class="price-controls">
 							<div class="control-container">
-								<label for="price-min">от </label><input type="text" name="price-min" value="0">
+								<label for="price-min">от </label><input type="text" name="price-min" value="0" id="price-min">
 							</div>
 							<div class="control-container">
-								<label for="price-max">до </label><input type="text" name="price-max" value="3000">
+								<label for="price-max">до </label><input type="text" name="price-max" value="3000" id="price-max">
 							</div>
 						</div>
 						<div class="range-controls">
@@ -81,7 +81,7 @@
 			</div>
 			<div class="results-title clearfix">
 				<div class="quantity-found">Найдено: 3</div>
-				<ul>
+				<ul class="sort">
 					<li class="sort">Сортировка:</li>
 					<li><a class="active">по цене</a></li>
 					<li><a href="#">по типу</a></li>
