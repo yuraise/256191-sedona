@@ -263,6 +263,11 @@ body {
 	margin-bottom: 44px;
 }
 
+.map {
+	position: relative;
+	overflow: hidden;
+}
+
 .btn, .form-btn,
 .search-form input,
 .search-form label {
@@ -349,11 +354,7 @@ body {
 	-webkit-transform: translateY(0px);
 			transform: translateY(0px);
 	}
-	30%	{
-	-webkit-transform: translateY(30px);
-			transform: translateY(30px);
-	}
-	60%	{
+	50%	{
 	-webkit-transform: translateY(100px);
 			transform: translateY(100px);
 	}
@@ -368,11 +369,7 @@ body {
 	-webkit-transform: translateY(0px);
 			transform: translateY(0px);
 	}
-	30%	{
-	-webkit-transform: translateY(30px);
-			transform: translateY(30px);
-	}
-	60%	{
+	50%	{
 	-webkit-transform: translateY(100px);
 			transform: translateY(100px);
 	}
@@ -413,9 +410,10 @@ body {
 }
 
 .search-form-hide {
-	display: none;
 	-webkit-animation: hide 1s;
 			animation: hide 1s;
+	-webkit-animation-fill-mode: forwards;
+			animation-fill-mode: forwards;
 }
 
 .search-form-show {
