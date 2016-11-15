@@ -7,6 +7,7 @@
 		var kids = popup.querySelector("#kids");
 		var storageAdults = localStorage.getItem("adults");
 		var storageKids = localStorage.getItem("kids");
+		popup.classList.add("search-form-hide");
 		btn.addEventListener("click", function(event) {
 			event.preventDefault();
 			if(popup.classList.contains("search-form-hide")) {
